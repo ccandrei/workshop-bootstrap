@@ -26,21 +26,26 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
         crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <img src="work.png" width="60" height="60" alt>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <!--barre de navigation qui se replie pour les petits écrans-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Collaborateurs<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Statistique</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-link" href="#">Activités</a>
+                </li>
+
+                <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
@@ -51,18 +56,63 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+                </li>-->
+
+            
             </ul>
+            <!--
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+            -->  
         </div>
     </nav>
 
+    <header></header>
+
+    <main class="container-xl">
+        <div class="row">
+            <div class="col-3 offset-9">
+                <button>Ajouter un nouvel collaborateur</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>Les collaborateurs</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <label for="champ_recherche">Rechercher un nom ou un prénom qui commence par: </label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="champ_recherche" name="terme_recherche" required >
+            </div>
+            <div class="col-2">
+                <button>Rechercher</button>
+            </div>
+            <div class="col-3">
+                <input id="voir_collab_chkbox" type="checkbox" name="voir_collab" >
+                <label for="voir_collab_chkbox">Voir les collaborateurs désactivés</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">Filtrer par département:</div>
+            <div class="col-2">
+                <select>
+                    <option>Tous</option>
+                    <option>Compatibilité</option>
+                    <option>Ressources Humaines</option>
+                    <option>Informatique</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
 </body>
 
 </html>
