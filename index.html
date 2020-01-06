@@ -25,56 +25,36 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="work.png" width="60" height="60" alt>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
+    <header>
         <!--barre de navigation qui se replie pour les petits écrans-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Collaborateurs<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Statistique</a>
-                </li>
-                <li class="nav-link" href="#">Activités</a>
-                </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="work.png" width="60" height="60" alt>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
 
-            
-            </ul>
-            <!--
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            -->  
-        </div>
-    </nav>
-
-    <header></header>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="creer.html">Collaborateurs<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistique</a>
+                    </li>
+                    <li class="nav-link" href="#">Activités</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <main class="container-xl">
         <div class="row">
             <div class="col-3 offset-9">
-                <button>Ajouter un nouvel collaborateur</button>
+                <a href="creer.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ajouter un
+                    nouvel collaborateur</a>
             </div>
         </div>
         <div class="row">
@@ -88,13 +68,13 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
                 <label for="champ_recherche">Rechercher un nom ou un prénom qui commence par: </label>
             </div>
             <div class="col-3">
-                <input type="text" id="champ_recherche" name="terme_recherche" required >
+                <input type="text" id="champ_recherche" name="terme_recherche" required>
             </div>
             <div class="col-2">
                 <button>Rechercher</button>
             </div>
             <div class="col-3">
-                <input id="voir_collab_chkbox" type="checkbox" name="voir_collab" >
+                <input id="voir_collab_chkbox" type="checkbox" name="voir_collab">
                 <label for="voir_collab_chkbox">Voir les collaborateurs désactivés</label>
             </div>
         </div>
@@ -113,222 +93,222 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
 
         <!--table des collaborateurs-->
         <article>
-<div class="card">
-    <div class="row">
-            <div class="card" style="max-width: fit-content;">
-                <div class="card-header">
-                    Nom Prénom
-                </div>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td rowspan="5">
-                            <img src="img/tete.jpg" style="width: 5rem" alt="tete">
-                        </td>
-                        <td>Fonction</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Département</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Editer</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-    </div>
+            <div class="card">
+                <div class="row">
+                    <div class="card" style="max-width: fit-content;">
+                        <div class="card-header">Nom Prénom</div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td rowspan="5">
+                                        <img src="img/tete.jpg" style="width: 5rem" alt="tete">
+                                    </td>
+                                    <td>Fonction</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Département</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Téléphone</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editer</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
-            <div class="card" style="max-width: fit-content;">
-                <div class="card-header">
-                    Nom Prénom
-                </div>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td rowspan="5">
-                            <img src="img/tete.jpg" style="width: 5rem" alt="tete">
-                        </td>
-                        <td>Fonction</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Département</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Editer</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-          </div>
+                    <div class="card" style="max-width: fit-content;">
+                        <div class="card-header">
+                            Nom Prénom
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td rowspan="5">
+                                        <img src="img/tete.jpg" style="width: 5rem" alt="tete">
+                                    </td>
+                                    <td>Fonction</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Département</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Téléphone</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editer</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
-            <div class="card" style="max-width: fit-content;">
-                <div class="card-header">
-                    Nom Prénom
+                    <div class="card" style="max-width: fit-content;">
+                        <div class="card-header">
+                            Nom Prénom
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td rowspan="5">
+                                        <img src="img/tete.jpg" style="width: 5rem" alt="tete">
+                                    </td>
+                                    <td>Fonction</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Département</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Téléphone</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editer</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td rowspan="5">
-                            <img src="img/tete.jpg" style="width: 5rem" alt="tete">
-                        </td>
-                        <td>Fonction</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Département</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Editer</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-     </div><!--card1-3-->
+                <!--card1-3-->
 
-     <div class="row">
-            <div class="card" style="max-width: fit-content;">
-                <div class="card-header">
-                    Nom Prénom
-                </div>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td rowspan="5">
-                            <img src="img/tete.jpg" style="width: 5rem" alt="tete">
-                        </td>
-                        <td>Fonction</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Département</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Editer</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-          </div>
+                <div class="row">
+                    <div class="card" style="max-width: fit-content;">
+                        <div class="card-header">
+                            Nom Prénom
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td rowspan="5">
+                                        <img src="img/tete.jpg" style="width: 5rem" alt="tete">
+                                    </td>
+                                    <td>Fonction</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Département</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Téléphone</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editer</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
-            <div class="card" style="max-width: fit-content;">
-                <div class="card-header">
-                    Nom Prénom
-                </div>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td rowspan="5">
-                            <img src="img/tete.jpg" style="width: 5rem" alt="tete">
-                        </td>
-                        <td>Fonction</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Département</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Editer</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-          </div>
+                    <div class="card" style="max-width: fit-content;">
+                        <div class="card-header">
+                            Nom Prénom
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td rowspan="5">
+                                        <img src="img/tete.jpg" style="width: 5rem" alt="tete">
+                                    </td>
+                                    <td>Fonction</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Département</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Téléphone</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editer</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
-            <div class="card" style="max-width: fit-content;">
-                <div class="card-header">
-                    Nom Prénom
+                    <div class="card" style="max-width: fit-content;">
+                        <div class="card-header">
+                            Nom Prénom
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td rowspan="5">
+                                        <img src="img/tete.jpg" style="width: 5rem" alt="tete">
+                                    </td>
+                                    <td>Fonction</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Département</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>Téléphone</td>
+                                    <td>xxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">Editer</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td rowspan="5">
-                            <img src="img/tete.jpg" style="width: 5rem" alt="tete">
-                        </td>
-                        <td>Fonction</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Département</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>xxxxx</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary">Editer</button>
-                        </td>
-                    </tr>
-                </table>
+                <!--card2-3-->
             </div>
-          </div>
-          </div><!--card2-3-->
-        </div>
-    </article>
+        </article>
         <!--fin de table-->
     </main>
     <footer></footer>
