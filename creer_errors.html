@@ -9,7 +9,7 @@ no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>SGP - Accueil</title>
+    <title>Creer Errors</title>
 </head>
 
 <body>
@@ -25,30 +25,37 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <header>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
         <!--barre de navigation qui se replie pour les petits écrans-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="work.png" width="60" height="60" alt>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <img src="work.png" width="60" height="60" alt>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Collaborateurs<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Statistique</a>
-                    </li>
-                    <li class="nav-link" href="#">Activités</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Collaborateurs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stats.html">Statistique</a>
+                </li>
+                <li class="nav-link" href="activites.html">Activités</a>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <nav>
+        <p></p>
+        <div class="row">
+            <div class="col-4 offset-9">
+                <a href="creer.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Afficher formulaire</a>
+            </div>
+        </div>
+    </nav>
 
     <main class="container-xl">
         <div class="row">
@@ -61,9 +68,9 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
             <div class="form-group row">
                 <div class="col-2"></div>
                 <label for="inputNom" class="col-sm-2 col-form-label">Nom</label>
-                <div class="col-sm-4"> 
-               <input type="text" class="form-control is-invalid" id="inputNom">
-            </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control is-invalid" id="inputNom">
+                </div>
                 <small id="inputNom" class="text-danger">Le nom est obligatoire.</small>
             </div>
 
@@ -73,15 +80,15 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
                 <div class="col-sm-4">
                     <input type="text" class="form-control is-invalid" id="inputPrenom">
                 </div>
-                    <small id="inputPrenom" class="text-danger">Le prénom est obligatoire.</small>
-                </div>
+                <small id="inputPrenom" class="text-danger">Le prénom est obligatoire.</small>
+            </div>
 
             <div class="form-group row">
                 <div class="col-2"></div>
                 <label for="inputDateNaissance" class="col-sm-2 col-form-label">Date de Naissance</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control is-invalid" id="inputDateNaissance">
-            </div>
+                </div>
                 <small id="inputDateNaissance" class="text-danger">La date de naissance est obligatoire.</small>
             </div>
 
@@ -90,7 +97,7 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
                 <label for="inputAdresse" class="col-sm-2 col-form-label">Adresse</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control is-invalid" id="inputAdresse">
-            </div>
+                </div>
                 <small id="inputAdresse" class="text-danger">L'adresse est obligatoire.</small>
             </div>
 
@@ -99,7 +106,7 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
                 <label for="inputNSS" class="col-sm-2 col-form-label">Numéro de Sécurité Sociale</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control is-invalid" id="inputNSS">
-            </div>
+                </div>
                 <small id="inputNSS" class="text-danger">Le numéro de sécurité sociale est obligatoire.</small>
             </div>
 
@@ -169,8 +176,8 @@ J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="a
             </div>
             </div>
         </form>
-        <a href="creer.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Afficher formulaire</a>
     </main>
+
 </body>
 
 </html>
